@@ -1,0 +1,30 @@
+<div class="h-full flex flex-col md:flex-row">
+    <div class="h-[220px] rounded-t-lg flex md:hidden justify-center bg-[#433848] p-2 md:p-8 gap-2 md:gap-8">
+        <div class="flex overflow-x-scroll rounded-lg w-full h-[200px] gap-2" style="-ms-overflow-style: none; scrollbar-width: none;">
+            {% for posts in photos %}
+            <img src="{{posts.image.url}}" class="rounded-lg object-cover" alt="Images">
+            {% endfor %}
+        </div>
+    </div>    
+    <div class="w-[400px] h-full rounded-l-lg hidden md:flex flex-col justify-center bg-[#433848] p-2 md:p-8 gap-2 md:gap-8">
+        {% for posts in photos %}
+        <div class="overflow-hidden rounded-lg">
+            <img src="{{posts.image.url}}" class="rounded-lg object-cover" style="width: 300px; height: 150px;" alt="Images">
+        </div>
+        {% endfor %}
+    </div>
+    <div class="p-2 md:p-10 w-full h-full flex flex-col">
+        <h1 class="text-xl lg:text-3xl xl:text-5xl font-bold text-[#433848]">{{post.title}}</h1>
+        <div class="text-[#433848] pt-2 md:pt-10 flex-grow">
+            <div>
+                <h1 class="text-lg md:text-xl xl:text-2xl font-bold">Description: </h1>
+                <div class="w-full max-h-[500px] mt-2 overflow-y-scroll" style="-ms-overflow-style: none; scrollbar-width: none;">
+                    <p class="text-xs md:text-lg xl:text-2xl font-semibold">{{post.description}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 flex items-start justify-end">
+            <a @click="view = false" class="px-8 py-2 bg-emerald-500 hover:scale-105 hover:bg-emerald-700 duration-100 text-lg font-bold text-white rounded-md">Back</a>
+        </div>
+    </div>
+</div>

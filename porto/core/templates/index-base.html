@@ -1,0 +1,40 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    {% tailwind_css %}
+    <title>Ghilman Alfaridzi | {% block title %}{% endblock %}</title>
+</head>
+<body style="font-family: 'Raleway', sans-serif;" class="bg-gradient-to-r from-purple-500 to-pink-500">
+    <!-- navbar -->
+    <nav class="w-full h-14 md:h-20 bg-gradient-to-r from-indigo-500 to-sky-500 flex items-center justify-between">
+        <!-- text logo -->
+        <div class="h-full px-8 flex items-center">
+            <h1 class="text-xl md:text-3xl font-bold text-white">Cr1zSec_</h1>
+        </div>
+        <!-- navigation -->
+        <div class="px-8">
+            <a href="{% url 'project' %}" class="relative text-xl md:text-3xl font-semibold text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">PROJECT</a>
+        </div>
+    </nav>
+    <!-- content -->
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!-- Footer -->
+    <div class="w-full h-14 md:h-20 bg-gradient-to-r from-indigo-500 to-sky-500 flex items-center justify-center mt-40">
+        <!-- Copyrights -->
+        <div class="h-full px-8 flex items-center">
+            <h1 class="relative text-xl md:text-3xl font-semibold text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Copyrights &copy; 2024 | Cr1zSec_</h1>
+        </div>
+    </div>
+</body>
+</html>

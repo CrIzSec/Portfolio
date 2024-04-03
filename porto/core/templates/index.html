@@ -1,0 +1,144 @@
+{% extends 'index-base.html' %}
+{% load static %}
+{% block title %} HOME {% endblock %}
+
+{% block content %}
+    <div class="transition duration-300">
+        <!-- Profile -->
+        <div class="hidden xl:flex justify-between lg:px-56 2xl:px-80 xl:px-74 pt-32">
+            <div class="">
+                <h1 class="text-4xl xl:text-6xl font-bold text-white">GHILMAN ALFARIDZI</h1>
+                <h1 class="text-2xl xl:text-4xl font-bold text-white">JUNIOR DEVELOPER</h1>
+                <div class="text-2xl xl:text-4xl font-bold text-white flex gap-2">
+                    <h1>I AM A </h1>
+                    <p class="font-black" id="typed-output"> </p>
+                </div>
+                <div class="pl-20">
+                    <a href="#" class="">
+                        <div class="mt-6 w-40 h-40 rounded-full bg-[#F7EEDD] flex items-center justify-center hover:shadow-2xl shadow-lg duration-300 hover:scale-105">
+                            <h1 class="text-4xl font-black text-[#433848]">CV</h1>
+                        </div>
+                    </a>
+                </div>
+                <script>
+                    var typed = new Typed('#typed-output', {
+                        strings: ['WEB DEVELOPER', 'WEB DEVELOPER',  'BACK END DEVELOPER', 'CYBER SECURITY ENTHUSIAST'],
+                        typeSpeed: 50,
+                        backSpeed: 30,
+                        loop: true
+                    });
+                </script>
+            </div>
+            <div class="flex 2xl:hidden">
+                <div class="relative z-20">
+                    <img src="https://i.ibb.co/Dg5qZG2/logo.png" alt="logo" class="rounded-xl " style="width: 300px; height: 300px;">
+                </div>
+            </div>
+            <div class="hidden 2xl:flex">
+                <div class="relative z-20">
+                    <img src="https://i.ibb.co/Dg5qZG2/logo.png" alt="logo" class="rounded-xl " style="width: 400px; height: 400px;">
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="xl:hidden flex flex-col items-center justify-center justify-between pt-20">
+            <div class="relative z-20">
+                <img src="https://i.ibb.co/Dg5qZG2/logo.png" alt="logo" class="rounded-xl w-80 h-80">
+            </div>
+            <div class="mt-2 flex flex-col items-center justify-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-white">GHILMAN ALFARIDZI</h1>
+                    <h1 class="text-xl font-bold text-white text-center">JUNIOR DEVELOPER</h1>
+                </div>
+                <div class="text-md md:text-4xl font-bold text-white flex gap-2 mt-4">
+                    <h1>I AM A </h1>
+                    <p class="font-black" id="typed-output2"> </p>
+                </div>
+                <script>
+                    var typed = new Typed('#typed-output2', {
+                        strings: ['WEB DEVELOPER', 'WEB DEVELOPER',  'BACK END DEVELOPER', 'CYBER SECURITY ENTHUSIAST'],
+                        typeSpeed: 50,
+                        backSpeed: 30,
+                        loop: true
+                    });
+                </script>
+                <a href="#">
+                    <div class="mt-6 w-24 h-24 rounded-full bg-[#F7EEDD] flex items-center justify-center hover:shadow-2xl shadow-lg duration-300 hover:scale-105">
+                        <h1 class="text-xl font-black text-[#433848]">CV</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- skills -->
+        <div>
+            <div class="flex items-center gap-2 xl:gap-16 mt-24 justify-center mx-4 lg:mx-0">        
+                <div>
+                    <img src="{% static 'django.svg' %}" class="w-56"></img>
+                </div>
+                <div>
+                    <img src="{% static 'alpine_long.svg' %}" class="w-80"></img>
+                </div>
+                <div>
+                    <img src="{% static 'python.svg' %}" class="w-60"></img>
+                </div>
+                <div>
+                    <img src="{% static 'javascript.svg' %}" class="w-20"></img>
+                </div>
+                <div>
+                    <img src="{% static 'sql.svg' %}" class="w-20"></img>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient-to-r from-indigo-500 to-sky-500 w-full h-80 mt-14 lg:mt-20 flex items-center">
+            <p class="md:text-xl text-white lg:text-2xl 2xl:text-4xl px-8 md:px-36 text-center font-semibold">
+                I have a passion for coding and technology, and I am enthusiastic about learning and growing in the field of web development. 
+                I am also involved in cybersecurity. I greatly enjoy working on diverse projects, experimenting with new technologies, 
+                and collaborating with others to create new innovations and solve existing problems.
+            </p>
+        </div>
+        <h1 class="text-white text-4xl xl:text-6xl font-bold text-center mt-20">EDUCATION</h1>
+        <div class="w-full h-80 bg-gradient-to-r from-indigo-500 to-sky-500 mt-14 flex gap-4 xl:gap-14 items-center justify-center">
+            <div class="text-white font-bold text-center">
+                <h1 class="text-2xl md:text-4xl xl:text-7xl">SD</h1>
+                <p class="text-sm md:text-xl xl:text-3xl">SDN BHAKTI WINAYA</p>
+                <p class="text-sm md:text-xl xl:text-3xl">BANDUNG</p>
+            </div>
+            <div class="xl:w-4 w-2 xl:h-36 h-24 rounded-xl bg-white"></div>
+            <div class="text-white font-bold text-center">
+                <h1 class="text-2xl md:text-4xl xl:text-7xl">SMP</h1>
+                <p class="text-sm md:text-xl xl:text-3xl">MTS MIFTAHUL UMAM</p>
+                <p class="text-sm md:text-xl xl:text-3xl">JAKARTA</p>
+            </div>
+            <div class="xl:w-4 w-2 xl:h-36 h-24 rounded-xl bg-white"></div>
+            <div class="text-white font-bold text-center">
+                <h1 class="text-2xl md:text-4xl xl:text-7xl">SMK</h1>
+                <p class="text-sm md:text-xl xl:text-3xl">SMK GRAFIKA LEKTUR</p>
+                <p class="text-sm md:text-xl xl:text-3xl">JAKARTA</p>
+            </div>
+        </div>
+        <h1 class="text-white text-4xl xl:text-6xl font-bold text-center mt-20">CONTACT ME</h1>
+        <div class="flex items-center justify-center">
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-14 xl:gap-20 justify-center mt-8 lg:mt-20">
+                <div class="flex items-center gap-4">
+                    <div class="xl:w-16 w-8 xl:h-16 h-8">
+                        <img src="{% static 'instagram.svg' %}" alt="">
+                    </div>
+                    <h1 class="text-2xl 2xl:text-4xl font-bold text-white">@Cr1zSec</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="xl:w-16 w-8 xl:h-16 h-8">
+                        <img src="{% static 'WhatsApp.svg' %}" alt="">
+                    </div>
+                    <h1 class="text-2xl 2xl:text-4xl font-bold text-white">+62 851-7979-7502</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="xl:w-16 w-8 xl:h-16 h-8">
+                        <img src="{% static 'gmail_icon.svg' %}" alt="">
+                    </div>
+                    <h1 class="lg:text-2xl 2xl:text-4xl font-bold text-white">aghilalfaridzi707@gmail.com</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
